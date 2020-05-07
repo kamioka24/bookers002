@@ -10,6 +10,47 @@
   </head>
 
   <body>
+    <header>
+      <div class="header-contents">
+        <h2 class="header-title">Bookers002</h2>
+        <nav>
+          <ul class="nav-list">
+            <% if user_signed_in? %>
+              <li class="nav-list-item">
+                <%= link_to "Home", user_path(current_user.id) %>
+              </li>
+              <li class="nav-list-item">
+                <%= link_to 'Users', users_path %>
+              </li>
+              <li class="nav-list-item">
+                <%= link_to 'Books', books_path %>
+              </li>
+              <li class="nav-list-item">
+                <%= link_to 'logout', destroy_user_session_path, method: :delete %> <!-- 要確認 -->
+              </li>
+            <% else %>
+              <li class="nav-list-item">
+                <%= link_to "Home", "/" %> <!-- 要変更 -->
+              </li>
+              <li class="nav-list-item">
+                <%= link_to "About", home_about_path %>
+              </li>
+              <li class="nav-list-item">
+                <%= link_to "sign up", new_user_registration_path %>
+              </li>
+              <li class="nav-list-item">
+                <%= link_to "login", new_user_session_path %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <%= yield %>
+    <footer>
+      <div class="footer-contents">
+        CopyRight Infratop.inc
+      </div>
+    </footer>
   </body>
 </html>
