@@ -9,10 +9,12 @@
 
 
 	<% if user.id == current_user.id %>
-		<p><%= link_to "プロフィール編集", edit_user_path(user.id), class: "pull-right" %></p>
+		<%= link_to edit_user_path(user.id) do %>
+		<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> <!-- aria-hiddenは読み飛ばし機能 -->
+		<% end %>
 	<% end %>
 
-	<h1>New Book</h1>
+	<h1>New book</h1>
 	<%= form_for(book) do |f| %>
 
 			<p>Title</p>
