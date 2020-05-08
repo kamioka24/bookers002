@@ -93,6 +93,25 @@ h1 {
 	margin-right: 30px;
 }
 
+.glyphicon-wrench {
+	padding: 5px 0;
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+	border: 1px solid #E6E6E6;
+}
+
+.newbook-form, .newform {
+	display: inline-block;
+	width: 100%;
+}
+
+.newform {
+	padding: 5px 0;
+	color: #fff;
+	background-color: #0F80FF;
+}
+
 .footer-contents {
 	float: right;
 }

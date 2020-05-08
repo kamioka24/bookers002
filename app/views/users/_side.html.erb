@@ -18,12 +18,15 @@
 	<%= form_for(book) do |f| %>
 
 			<p>Title</p>
-			<%= f.text_field :title %>
-
+			<div class="newbook-form">
+				<%= f.text_field :title %>
+			</div>
 			<p>Opinion</p>
-			<%= f.text_area :body %>
+			<div class="newbook-form">
+				<%= f.text_area :body %>
+			</div>
 
-			<p><%= f.submit 'Create Book' %></p>
+			<input type="submit" value="Create Book" class="newform" >
 
 	<% end %>
 </div>
