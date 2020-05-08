@@ -16,10 +16,10 @@
 					<td><%= link_to @my_book.title, book_path %></td>
 					<td><%= @my_book.body %></td>
 					<% if @my_book.user == current_user %>
-						<td><%= link_to "Edit", edit_book_path(@my_book.id) %></td>
+						<td><%= link_to "Edit", edit_book_path(@my_book.id), class: "book-edit book-btn" %></td>
 					<% end %>
 					<% if @my_book.user == current_user %>
-						<td><%= link_to "Destroy", book_path(@my_book.id), method: :delete, "data-confirm" => "本当に削しますか？" %></td>
+						<td><%= link_to "Destroy", book_path(@my_book.id), class: "book-destroy book-btn", method: :delete, "data-confirm" => "本当に削しますか？" %></td>
 					<% end %>
 				</tr>
 			</table>

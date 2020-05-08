@@ -21,6 +21,10 @@
 	padding: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
 .clearfix ::after {
 	content: "";
 	display: block;
@@ -38,8 +42,38 @@ header {
 	color: #fff;
 }
 
+.header-contents {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.header-title {
+	font-size: 20px;
+	float: left;
+	padding-top: 5px;
+}
+
+.nav-list {
+	float: right;
+	display: flex;
+	line-height: 50px;
+}
+
+.nav-list-item {
+	margin-right: 30px;
+}
+
 footer {
 	width: 90%;
+}
+
+.footer-contents {
+	float: right;
+}
+
+main {
+	width: 90%;
+	margin: 0 auto;
 }
 
 h1 {
@@ -72,27 +106,7 @@ h1 {
 	text-align: center;
 }
 
-.header-contents {
-	width: 90%;
-	margin: 0 auto;
-}
-
-.header-title {
-	font-size: 20px;
-	float: left;
-	padding-top: 5px;
-}
-
-.nav-list {
-	float: right;
-	display: flex;
-	line-height: 50px;
-}
-
-.nav-list-item {
-	margin-right: 30px;
-}
-
+// プロフィール編集ボタン
 .glyphicon-wrench {
 	padding: 5px 0;
 	text-align: center;
@@ -101,6 +115,7 @@ h1 {
 	border: 1px solid #E6E6E6;
 }
 
+// 新規投稿欄
 .newbook-form, .newform {
 	display: inline-block;
 	width: 100%;
@@ -112,11 +127,17 @@ h1 {
 	background-color: #0F80FF;
 }
 
-.footer-contents {
-	float: right;
+.book-btn {
+	border-radius: 4px;
+	padding: 5px 10px;
 }
 
-main {
-	width: 90%;
-	margin: 0 auto;
+.book-edit {
+	color: #fff;
+	background-color: #108001;
+}
+
+.book-destroy {
+	color: #888;
+	background-color: #800002;
 }
