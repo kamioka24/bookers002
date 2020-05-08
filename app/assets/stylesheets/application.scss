@@ -43,7 +43,7 @@ header {
 }
 
 .header-contents {
-	width: 90%;
+	width: 87%;
 	margin: 0 auto;
 }
 
@@ -64,7 +64,7 @@ header {
 }
 
 footer {
-	width: 90%;
+	width: 87%;
 }
 
 .footer-contents {
@@ -72,7 +72,7 @@ footer {
 }
 
 main {
-	width: 90%;
+	width: 87%;
 	margin: 0 auto;
 }
 
@@ -140,4 +140,20 @@ h1 {
 .book-destroy {
 	color: #888;
 	background-color: #800002;
+}
+
+.sign-up {
+	color: #fff;
+	background-color: #108001;
+	padding: 5px 5px;
+	border-radius: 4px;
+	margin: 10px 0;
+}
+
+.log-in {
+	color: #fff;
+	background-color: #0F80FF;
+	padding: 5px 5px;
+	border-radius: 4px;
+	margin: 10px 0;
 }
